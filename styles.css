@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(sbike.jpg);
+}
+.nav-bar{
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar ul li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    margin: 0 20px;
+    position: relative;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+.nav-bar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.nav-bar ul li:hover::after{
+width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+   font-size: 55px;
+   margin-top: 80px;
+}
+.content p{
+    margin: 0 auto;
+    font-weight: 100;
+    line-height: 20px;
+
+}
