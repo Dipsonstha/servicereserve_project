@@ -20,20 +20,51 @@
             border: 3px solid #009688;
             border-radius: 25px;
         }
+        .password{
+            margin: 20px 40%;
+            padding: auto;
+
+
+        }
+
+        .con input{
+            color:white;
+           border-radius: 20px;
+           width: 200px;
+           height: 30px;
+           font-weight: bold;
+           cursor: pointer;
+        }
+        .con input:hover{
+            background-color: #04665c;
+        }
+        .form input{
+            background: transparent;
+            color: aliceblue;
+            border: none;
+            border-bottom:2PX solid #009688;
+        }
+        .form input:hover{
+            border-bottom: 2PX solid #abd1cd;
+        }
+        h1{
+            width: 100%;
+
+        }
+        h1:hover{
+            color: antiquewhite;
+            border-color: #747474;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>SignUp Form</h1>
+        <h1>SignUp</h1>
+        <hr>
     <form class="form">
         <label for="name">Full Name</label>
         <div>
             <input type="text" name="MyName" id="name">
-        </div>
-        <br>
-        <label for="role">Role</label>
-        <div>
-            <input type="text" name="MyRole" id="role">
         </div>
         <br>
         <label for="email">Email Address</label>
@@ -46,13 +77,9 @@
             <input type="text" name="MyAddress" id="address">
         </div>
         <br>
-        <label for="bonus">Bonus</label>
+        <label for="date">Date of Birth</label>
         <div>
-            <input type="number" name="MyBonus" id="bonus">
-        </div>
-        <br>
-        <div>
-            <input type="date">
+            <input type="date" id="date">
         </div>
         <br>
         <div>
@@ -61,26 +88,25 @@
                 type="radio" name="MyGender">
         </div>
         <br>
-        <div> 2 Wheeler 
-            <label for="Company">Company</label>
-        <select name="MyCar" id="Car">
-            <option value="Yamaha">Yamaha</option>
-            <option value="Honda">Honda</option>
-            <option value="Bajaj">Bajaj</option>
-            <option value="TVS">TVS</option>
-            <option value="Hero">Hero</option>
-            <option value="Royal Enfiled">Royal Enfiled</option>
-            <option value="Beneli">Beneli</option>
-    
-
-        </select>
+    <div>
+        <label for="password">Enter your password</label>
+        <br>
+        <input type="password" name="mypassword" id="password" minlength="7">
     </div>
     <br>
+    <div>
+        <label for="password">Confirm password</label>
+        <br>
+        <input type="password" name="mypassword" id="password" minlength="7">
+    </div>
+    <br>
+    <hr>
         <div class="con">
             <input type="submit" value="Submit Now">
             <input type="reset" value="Reset Now">
         </div>
     </form>
+    <br>
 </div>
 </body>
 </html>
